@@ -6,6 +6,7 @@ metadata:
   annotations:
 {{ if eq .Values.spec.ingress.type "nginx" }} 
     #nginx annotations
+    
 {{ else }}
     alb.ingress.kubernetes.io/group.name: riker
     alb.ingress.kubernetes.io/scheme: internet-facing
